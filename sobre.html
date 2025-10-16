@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovana Marques Silva's Portfolio</title>
+  <meta name="description" content="Portfolio de Giovana Marques Silva - Desenvolvedora e estudante de Sistemas">
+  <meta name="keywords" content="desenvolvimento, programação, portfolio, projetos, tecnologia">
+  <link rel="canonical" href="https://giovanamsilva.com">
+  <meta property="og:title" content="Giovana Marques Silva - Portfolio">
+  <meta property="og:description" content="Desenvolvedora e estudante de Sistemas">
+  <meta property="og:image" content="img/me.png">
+  <meta property="og:url" content="https://giovanamsilva.com">
+  <link rel="icon" href="img/logositeport.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/11575112a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="particles-background"></div>
+  <!-- Header -->
+  <header>
+    <span class="logo">Giovana</span>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+      </ul>
+    </nav>
+    <div class="social-links">
+      <a href="https://github.com/Giovanaasilvaa" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/giovana-marques-silva-aa8595297" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:giovanamarquessilva24@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </header>
+
+<main class="about-main">
+
+  <!-- SEÇÃO SOBRE MIM -->
+  <section id="about-me" class="section">
+    <div id="particles-about"></div>
+
+    <div class="text-container">
+      <h1 class="about-title">Sobre Mim</h1>
+      <p class="description">
+        Sou Giovana, estudante de Análise e Desenvolvimento de Sistemas e entusiasta de tecnologia e inovação. Tenho habilidades em Python, JavaScript, HTML, CSS, Java e C, sempre buscando aprender mais e criar soluções eficientes para desafios do mundo real. Com uma base sólida em programação e fundamentos de TI, estou em constante evolução para contribuir com um futuro digital mais conectado e acessível.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO TECNOLOGIAS -->
+  <section id="technology" class="section">
+  <div id="particles-tech"></div>
+
+  <div class="container-tech">
+    <h2 class="tech-title">Minhas Tecnologias</h2>
+
+    <ul class="wrapper">
+      <li class="icon python">
+        <i class="fa-brands fa-python"></i>
+        <span class="tooltip">Python</span>
+      </li>
+      <li class="icon js">
+        <i class="fa-brands fa-js"></i>
+        <span class="tooltip">JavaScript</span>
+      </li>
+      <li class="icon html">
+        <i class="fa-brands fa-html5"></i>
+        <span class="tooltip">HTML</span>
+      </li>
+      <li class="icon css">
+        <i class="fa-brands fa-css3-alt"></i>
+        <span class="tooltip">CSS</span>
+      </li>
+      <li class="icon java">
+        <i class="fa-brands fa-java"></i>
+        <span class="tooltip">Java</span>
+      </li>
+      <li class="icon c">
+        <i class="fa-solid fa-c"></i>
+        <span class="tooltip">C</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#technology">Tecnologias</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Envie uma mensagem</h4>
+      <p>Estou sempre aberta a novas oportunidades e colaborações!</p>
+      <a href="mailto:giovanamarquessilva24@gmail.com" class="email-button">Enviar</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  // Partículas sobre mim
+  particlesJS('particles-about', {
+    particles: {
+      number: { value: 50, density: { enable: true, value_area: 800 } },
+      color: { value: "#008584" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5, random: true },
+      size: { value: 3, random: true },
+      line_linked: { enable: true, distance: 120, color: "#008584", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 1, direction: "none", straight: false, out_mode: "out" }
+    },
+    interactivity: {
+      events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } }
+    },
+    retina_detect: true
+  });
+
+  // Partículas tecnologias
+  particlesJS('particles-tech', {
+    particles: {
+      number: { value: 40, density: { enable: true, value_area: 800 } },
+      color: { value: "#008584" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5, random: true },
+      size: { value: 4, random: true },
+      line_linked: { enable: true, distance: 120, color: "#008584", opacity: 0.4, width: 1 },
+      move: { enable: true, speed: 1, direction: "none", straight: false, out_mode: "out" }
+    },
+    interactivity: {
+      events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } }
+    },
+    retina_detect: true
+  });
+</script>
+</body>
+</html>
